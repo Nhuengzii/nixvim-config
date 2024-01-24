@@ -8,5 +8,6 @@
     ./plugins.nix
     ./cmp.nix
     ./keymaps.nix
+    ./treesitter.nix
   ];
 }

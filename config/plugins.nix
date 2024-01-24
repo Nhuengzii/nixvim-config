@@ -4,12 +4,28 @@
             enable = true;
 	    mainImage = "file";
         };
-    };
-    plugins.neo-tree = {
-      enable = true;
+	neo-tree = {
+	  enable = true;
+	};
+
+	telescope = {
+	  enable = true;
+	};
+
+	floaterm = {
+	  enable = true;
+	};
+
+	better-escape = {
+	  enable = true;
+	};
+	copilot-lua = {
+	  enable = true;
+	};
+	alpha = {
+	  enable = true;
+	  theme = "dashboard";
+	};
     };
 
-    plugins.telescope = {
-      enable = true;
-    };
 }

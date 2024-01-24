@@ -17,5 +17,21 @@
       key = "<leader>q";
       action = "<cmd>q<CR>";
     }
+    {
+      key = "<leader>ft";
+      action = "<cmd>FloatermToggle<CR>";
+    }
+    {
+      key = "<leader>gg";
+      action = "<cmd>FloatermNew lazygit<CR>";
+    }
+    {
+      key = "]b";
+      action = "<cmd>BufferLineMoveNext<CR>";
+    }
+    {
+      key = "[b";
+      action = "<cmd>BufferLineMovePrev<CR>";
+    }
   ];
 }

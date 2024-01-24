@@ -1,7 +1,5 @@
 {
     options = {
-        number = true;
-        relativenumber = true;
-        shiftwidth = 2;
+      number = true;
     };
 }

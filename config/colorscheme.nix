@@ -1,5 +1,9 @@
 {
     colorschemes.gruvbox = {
-        enable = true;
+        enable = false;
+    };
+    colorschemes.catppuccin = {
+      enable = true;
+      flavour = "mocha";
     };
 }

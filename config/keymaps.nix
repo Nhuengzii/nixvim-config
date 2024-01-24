@@ -18,7 +18,7 @@
       action = "<cmd>q<CR>";
     }
     {
-      key = "<leader>ft";
+      key = "<leader>tf";
       action = "<cmd>FloatermToggle<CR>";
     }
     {

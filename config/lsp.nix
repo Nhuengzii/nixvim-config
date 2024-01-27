@@ -7,6 +7,12 @@
     tsserver = {
       enable = true;
     };
+    pyright = {
+      enable = true;
+    };
+    clangd = {
+      enable = true;
+    };
   };
   keymaps = [
     {

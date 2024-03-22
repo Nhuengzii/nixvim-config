@@ -13,6 +13,9 @@
     clangd = {
       enable = true;
     };
+    fortls = {
+      enable = true;
+    };
   };
   keymaps = [
     {

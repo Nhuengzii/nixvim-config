@@ -27,11 +27,35 @@
     }
     {
       key = "]b";
-      action = "<cmd>BufferLineMoveNext<CR>";
+      action = "<cmd>BufferLineCycleNext<CR>";
     }
     {
       key = "[b";
-      action = "<cmd>BufferLineMovePrev<CR>";
+      action = "<cmd>BufferLineCyclePrev<CR>";
+    }
+    {
+      key = "bd";
+      action = "<cmd>bd<CR>";
+    }
+    {
+      key = "<C-h>";
+      action = "<C-w>h";
+    }
+    {
+      key = "<C-j>";
+      action = "<C-w>j";
+    }
+    {
+      key = "<C-k>";
+      action = "<C-w>k";
+    }
+    {
+      key = "<C-l>";
+      action = "<C-w>l";
+    }
+    {
+      key = "c";
+      action = "<cmd>bd<CR>";
     }
   ];
 }

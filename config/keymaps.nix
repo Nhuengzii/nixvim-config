@@ -54,7 +54,7 @@
       action = "<C-w>l";
     }
     {
-      key = "c";
+      key = "<leader>c";
       action = "<cmd>bd<CR>";
     }
   ];

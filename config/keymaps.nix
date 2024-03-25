@@ -26,15 +26,15 @@
       action = "<cmd>FloatermNew lazygit<CR>";
     }
     {
-      key = "]b";
+      key = "<leader>]b";
       action = "<cmd>BufferLineCycleNext<CR>";
     }
     {
-      key = "[b";
+      key = "<leader>[b";
       action = "<cmd>BufferLineCyclePrev<CR>";
     }
     {
-      key = "bd";
+      key = "<leader>bd";
       action = "<cmd>bd<CR>";
     }
     {

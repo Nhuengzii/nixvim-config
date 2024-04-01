@@ -16,6 +16,7 @@
     fortls = {
       enable = true;
     };
+    dockerls.enable = true;
   };
   keymaps = [
     {

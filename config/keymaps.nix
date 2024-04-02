@@ -10,6 +10,10 @@
       action = "<cmd>Telescope find_files<CR>";
     }
     {
+      key = "<leader>fw";
+      action = "<cmd>Telescope live_grep<CR>";
+    }
+    {
       key = "<leader>w";
       action = "<cmd>w<CR>";
     }
@@ -19,19 +23,27 @@
     }
     {
       key = "<leader>tf";
-      action = "<cmd>FloatermToggle<CR>";
+      action = "<cmd>ToggleTerm name=main direction=float<CR>";
+      mode = ["n"];
+    }
+    {
+      key = "<leader>tf";
+      action = "<C-\\><C-n><C-w>l";
+      mode = ["t"];
     }
     {
       key = "<leader>gg";
-      action = "<cmd>FloatermNew lazygit<CR>";
+      action = "<cmd>LazyGit<CR>";
     }
     {
-      key = "<leader>]b";
+      key = "]b";
       action = "<cmd>BufferLineCycleNext<CR>";
+      mode = [ "n" ];
     }
     {
-      key = "<leader>[b";
+      key = "[b";
       action = "<cmd>BufferLineCyclePrev<CR>";
+      mode = [ "n" ];
     }
     {
       key = "<leader>bd";

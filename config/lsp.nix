@@ -17,6 +17,9 @@
       enable = true;
     };
     dockerls.enable = true;
+    yamlls.enable = true;
+    bashls.enable = true;
+    helm-ls.enable = true;
   };
   keymaps = [
     {

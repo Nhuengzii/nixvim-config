@@ -12,7 +12,7 @@
       enable = true;
     };
 
-    floaterm = {
+    toggleterm = {
       enable = true;
     };
 
@@ -41,6 +41,9 @@
   extraPlugins = with vimPlugins; [
     {
       plugin = telescope-ui-select-nvim;
+    }
+    {
+      plugin = lazygit-nvim;
     }
   ];
 }

@@ -16,6 +16,9 @@
        {name = "buffer";}
        {name = "luasnip";}
     ];
+    settings.snippet = {
+      expand = "function(args) require('luasnip').lsp_expand(args.body) end";
+    };
   };
 
   plugins.cmp-nvim-lsp.enable = true;

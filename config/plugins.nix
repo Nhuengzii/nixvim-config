@@ -37,6 +37,9 @@
     gitsigns = {
       enable = true;
     };
+    nvim-autopairs = {
+      enable = true;
+    };
   };
   extraPlugins = with vimPlugins; [
     {

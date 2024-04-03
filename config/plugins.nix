@@ -19,9 +19,6 @@
     better-escape = {
       enable = true;
     };
-    copilot-lua = {
-      enable = true;
-    };
     alpha = {
       enable = true;
       theme = "dashboard";
@@ -36,6 +33,9 @@
       sourcesItems = [
         
       ];
+    };
+    gitsigns = {
+      enable = true;
     };
   };
   extraPlugins = with vimPlugins; [

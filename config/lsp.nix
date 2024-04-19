@@ -20,6 +20,7 @@
     yamlls.enable = true;
     bashls.enable = true;
     helm-ls.enable = true;
+    terraformls.enable = true;
   };
   keymaps = [
     {

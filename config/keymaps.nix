@@ -22,6 +22,16 @@
       action = "<cmd>q<CR>";
     }
     {
+      key = "|";
+      action = "<cmd>vs<cr>";
+      mode = ["n"];
+    }
+    {
+      key = "_";
+      action = "<cmd>sp<cr>";
+      mode = ["n"];
+    }
+    {
       key = "<leader>tf";
       action = "<cmd>ToggleTerm name=main direction=float<CR>";
       mode = ["n"];

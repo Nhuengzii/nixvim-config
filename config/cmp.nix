@@ -4,8 +4,32 @@
     autoEnableSources = true;
     settings.mapping = {
       "<CR>" = "cmp.mapping.confirm({ select = true })";
-      "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-      "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+      "<S-Tab>" = ''
+        cmp.mapping(function (fallback)
+          local luasnip = require('luasnip')
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+            end
+        end, {'i', 's'})
+      '';
+      "<Tab>" = ''
+        cmp.mapping(function (fallback)
+          local luasnip = require('luasnip')
+          if luasnip.expandable() then
+            luasnip.expand()
+          elseif cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.jumpable(1) then
+            luasnip.jump(1)
+          else
+            fallback()
+          end
+        end, {'i', 's'})
+      '';
     };
     settings.window.completion = {
       border = "rounded";
@@ -25,6 +49,7 @@
   plugins.cmp_luasnip = {
     enable = true;
   };
+  plugins.friendly-snippets.enable = true;
   plugins.luasnip = {
     enable = true;
   };

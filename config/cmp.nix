@@ -3,7 +3,7 @@
     enable = true;
     autoEnableSources = true;
     settings.mapping = {
-      "<CR>" = "cmp.mapping.confirm({ select = true })";
+      "<CR>" = "cmp.mapping.confirm({ select = false })";
       "<S-Tab>" = ''
         cmp.mapping(function (fallback)
           local luasnip = require('luasnip')

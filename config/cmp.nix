@@ -19,10 +19,10 @@
       "<Tab>" = ''
         cmp.mapping(function (fallback)
           local luasnip = require('luasnip')
-          if luasnip.expandable() then
-            luasnip.expand()
-          elseif cmp.visible() then
+          if cmp.visible() then
             cmp.select_next_item()
+          elseif luasnip.expandable() then
+            luasnip.expand()
           elseif luasnip.jumpable(1) then
             luasnip.jump(1)
           else

@@ -21,6 +21,7 @@
     bashls.enable = true;
     helm-ls.enable = true;
     terraformls.enable = true;
+    taplo.enable = true;
   };
   keymaps = [
     {
@@ -34,6 +35,14 @@
     {
       key = "<leader>lr";
       action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+    }
+    {
+      key = "<leader>lr";
+      action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+    }
+    {
+      key = "<leader>lf";
+      action = "<cmd>lua vim.lsp.buf.format()<CR>";
     }
   ];
 }

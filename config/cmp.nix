@@ -16,6 +16,16 @@
             end
         end, {'i', 's'})
       '';
+      "<C-Tab>" = ''
+        cmp.mapping(function (fallback)
+          local luasnip = require('luasnip')
+          if luasnip.jumpable(1) then
+            luasnip.jump(1)
+          else
+            fallback()
+            end
+        end, {'i', 's'})
+      '';
       "<Tab>" = ''
         cmp.mapping(function (fallback)
           local luasnip = require('luasnip')

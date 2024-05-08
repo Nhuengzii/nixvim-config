@@ -40,6 +40,7 @@
     nvim-autopairs = {
       enable = true;
     };
+    copilot-lua.enable = true;
   };
   extraPlugins = with vimPlugins; [
     {
